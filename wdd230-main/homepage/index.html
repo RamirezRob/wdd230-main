@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Ramirez - WDD 230 - Web Frontend Development</title>
+    <meta name="Roberto Ramirez" content="home page for this course. 
+    It will serve as a portal page with links to assignments" />
+    <link rel="stylesheet" href="/wdd230-main/homepage/styles/base.css" type="text/css">
+</head>
+
+<body>
+    <header>
+
+        <img src="/wdd230-main/homepage/images/Roberto.png" alt="" width="100px" >
+        <H1>Roberto J. Ramirez</H1>
+
+    </header>
+
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="chamber/siteplan.html">Site Plan</a>
+        <a href="chamber">Chamber</a>
+        <a href="https://www.byui.edu">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+    </nav>
+    
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul class="list">
+                <li>01:</li>
+                <li>02:</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Information</h3>
+            <h4>Wheather</h4>
+            <h4>Number of visits</h4>
+            <h4>Mexico</h4>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©️<script>document.write(new Date().getFullYear())</script><br> Roberto Ramirez <br> Chihuahua, Mexico
+        </p>
+        <p>Last Modification: </p>
+        <p id="modification"></p>
+        <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("modification").innerHTML = date;
+        </script>
+    </footer>
+</body>
+</html>
